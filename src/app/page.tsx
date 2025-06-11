@@ -43,11 +43,20 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-800 dark:text-white mb-6">
+          <h1
+            className={`text-5xl md:text-6xl font-bold text-slate-800 dark:text-white mb-6 transition-all duration-1000 ${
+              isLoaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+            }`}>
             Professional Software
-            <span className="text-blue-600 dark:text-blue-400"> Solutions</span>
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              {" "}
+              Solutions
+            </span>
           </h1>
-          <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+          <p
+            className={`text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed transition-all duration-1000 delay-300 ${
+              isLoaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+            }`}>
             Delivering cutting-edge software development, web design, and
             intranet solutions to help your business thrive in the digital age.
           </p>
