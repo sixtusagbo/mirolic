@@ -28,6 +28,8 @@ export const metadata: Metadata = {
     "web applications",
     "API development",
     "e-commerce platforms",
+    "cloud services",
+    "UI/UX design",
     "custom software",
     "enterprise solutions",
     "Nigeria software company",

@@ -2,43 +2,47 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Mirolic Enterprise",
-    "description": "Professional software development, web design, and intranet development services",
-    "url": "https://mirolic.sixtusagbo.dev",
-    "logo": "https://mirolic.sixtusagbo.dev/favicon.svg",
-    "contactPoint": {
+    name: "Mirolic Enterprise",
+    description:
+      "Professional software development, web design, and intranet development services",
+    url: "https://mirolic.sixtusagbo.dev",
+    logo: "https://mirolic.sixtusagbo.dev/favicon.svg",
+    contactPoint: {
       "@type": "ContactPoint",
-      "email": "hi+mirolic@sixtusagbo.dev",
-      "contactType": "customer service"
+      email: "hi+mirolic@sixtusagbo.dev",
+      contactType: "customer service",
     },
-    "address": {
+    address: {
       "@type": "PostalAddress",
-      "addressCountry": "NG"
+      addressCountry: "NG",
     },
-    "sameAs": [],
-    "foundingDate": "2025",
-    "numberOfEmployees": "1",
-    "legalName": "Mirolic Enterprise",
-    "taxID": "33121515-0001",
-    "areaServed": {
+    sameAs: [],
+    foundingDate: "2025",
+    numberOfEmployees: "1",
+    legalName: "Mirolic Enterprise",
+    taxID: "33121515-0001",
+    areaServed: {
       "@type": "Country",
-      "name": "Nigeria"
+      name: "Nigeria",
     },
-    "serviceType": [
+    serviceType: [
       "Software Development",
       "Web Design",
       "Intranet Development",
       "Mobile App Development",
-      "Web Application Development"
+      "Web Application Development",
+      "Cloud Services",
     ],
-    "knowsAbout": [
+    knowsAbout: [
       "Software Development",
       "Web Design",
       "Mobile Applications",
       "Intranet Systems",
       "API Development",
-      "E-commerce Platforms"
-    ]
+      "E-commerce Platforms",
+      "Cloud Services",
+      "UI/UX Design",
+    ],
   };
 
   return (

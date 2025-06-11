@@ -214,7 +214,7 @@ export default function Home() {
               <ul className="text-sm text-slate-500 dark:text-slate-400 space-y-2">
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
-                  Responsive Website Design
+                  UI/UX Design & Prototyping
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
@@ -222,7 +222,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
-                  Landing Pages & Portfolios
+                  Cloud Services & Hosting
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
