@@ -230,65 +230,55 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-slate-50 dark:bg-slate-900">
-        <div className="container mx-auto px-6">
+      <section id="about" className="relative py-20">
+        <SectionBackground variant="darker" />
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-slate-800 dark:text-white mb-8">
+            <h2 className="text-4xl font-bold text-white mb-8">
               About Mirolic Enterprise
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
               Mirolic Enterprise is a registered business specializing in
-              software development, web design, and intranet development. We are
+              software development, cloud services, and intranet development. We are
               committed to delivering innovative technology solutions that drive
               business growth and digital transformation.
             </p>
             <div className="grid md:grid-cols-2 gap-8 text-left">
-              <div className="bg-white dark:bg-slate-800 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
-                  Our Mission
-                </h3>
-                <p className="text-slate-600 dark:text-slate-300">
-                  To empower businesses with cutting-edge technology solutions
-                  that enhance productivity, streamline operations, and create
-                  meaningful digital experiences.
-                </p>
-              </div>
-              <div className="bg-white dark:bg-slate-800 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
-                  Our Approach
-                </h3>
-                <p className="text-slate-600 dark:text-slate-300">
-                  We combine technical expertise with deep understanding of
-                  business needs to deliver solutions that are not just
-                  functional, but transformative.
-                </p>
-              </div>
+              <FeatureCard
+                title="Our Mission"
+                description="To empower businesses with cutting-edge technology solutions that enhance productivity, streamline operations, and create meaningful digital experiences."
+              />
+              <FeatureCard
+                title="Our Approach"
+                description="We combine technical expertise with deep understanding of business needs to deliver solutions that are not just functional, but transformative."
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white dark:bg-slate-800">
-        <div className="container mx-auto px-6">
+      <section id="contact" className="relative py-20">
+        <SectionBackground variant="dark" />
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-slate-800 dark:text-white mb-4">
+              <h2 className="text-4xl font-bold text-white mb-4">
                 Get In Touch
               </h2>
-              <p className="text-xl text-slate-600 dark:text-slate-300">
+              <p className="text-xl text-gray-300">
                 Ready to start your next project? Let's discuss how we can help.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
-              <div>
-                <h3 className="text-2xl font-semibold text-slate-800 dark:text-white mb-6">
+              <div className="glass-card p-8 rounded-2xl">
+                <h3 className="text-2xl font-semibold text-white mb-6">
                   Contact Information
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="w-6 h-6 text-blue-600 dark:text-blue-400 mt-1">
+                    <div className="w-6 h-6 text-gold-400 mt-1">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -302,13 +292,13 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-slate-800 dark:text-white">
+                      <p className="font-semibold text-white">
                         Email
                       </p>
-                      <p className="text-slate-600 dark:text-slate-300">
+                      <p className="text-gray-300">
                         <a
                           href="mailto:hi+mirolic@sixtusagbo.dev"
-                          className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                          className="hover:text-gold-400 transition-colors">
                           hi+mirolic@sixtusagbo.dev
                         </a>
                       </p>
@@ -316,7 +306,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-6 h-6 text-blue-600 dark:text-blue-400 mt-1">
+                    <div className="w-6 h-6 text-gold-400 mt-1">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -330,10 +320,10 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-slate-800 dark:text-white">
+                      <p className="font-semibold text-white">
                         Business Registration
                       </p>
-                      <p className="text-slate-600 dark:text-slate-300">
+                      <p className="text-gray-300">
                         Registration No: 8441451
                         <br />
                         TIN: 33121515-0001
@@ -343,19 +333,17 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl">
-                <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-6">
+              <div className="glass-card p-8 rounded-2xl">
+                <h3 className="text-xl font-semibold text-white mb-6">
                   Start Your Project
                 </h3>
-                <p className="text-slate-600 dark:text-slate-300 mb-6">
+                <p className="text-gray-300 mb-6">
                   Have a project in mind? We'd love to hear about it and discuss
                   how we can bring your vision to life.
                 </p>
-                <a
-                  href="mailto:hi+mirolic@sixtusagbo.dev"
-                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                <Web3Button href="mailto:hi+mirolic@sixtusagbo.dev" variant="primary">
                   Send us an Email
-                </a>
+                </Web3Button>
               </div>
             </div>
           </div>
@@ -363,16 +351,17 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-800 dark:bg-slate-900 text-white py-12">
-        <div className="container mx-auto px-6">
+      <footer className="relative bg-black py-12">
+        <SectionBackground variant="darker" />
+        <div className="container mx-auto px-6 relative z-10">
           <div className="text-center">
-            <div className="text-2xl font-bold mb-4">Mirolic Enterprise</div>
-            <p className="text-slate-400 mb-6">
+            <div className="text-2xl font-bold mb-4 text-gold-400">Mirolic Enterprise</div>
+            <p className="text-gray-400 mb-6">
               Professional Software Development, Cloud Services & Intranet
               Solutions
             </p>
-            <div className="border-t border-slate-700 pt-6">
-              <p className="text-slate-400 text-sm">
+            <div className="border-t border-gold-500/20 pt-6">
+              <p className="text-gray-400 text-sm">
                 © 2025 Mirolic Enterprise. All rights reserved. | Registration
                 No: 8441451
               </p>
