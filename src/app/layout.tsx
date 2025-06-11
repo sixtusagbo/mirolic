@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   keywords:
     "software development, web design, intranet development, Nigeria, Awka, Anambra",
   authors: [{ name: "Mirolic Enterprise" }],
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "Mirolic Enterprise - Software Development & Web Design",
     description:
