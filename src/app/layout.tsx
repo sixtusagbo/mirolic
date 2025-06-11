@@ -76,9 +76,7 @@ export const metadata: Metadata = {
       "Professional software development, cloud services, and intranet development solutions.",
     images: ["/favicon.svg"],
   },
-  verification: {
-    google: "your-google-verification-code", // Replace with actual verification code
-  },
+
   alternates: {
     canonical: "https://mirolic.sixtusagbo.dev",
   },
