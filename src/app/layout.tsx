@@ -15,21 +15,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mirolic Enterprise - Software Development & Web Design",
+    default: "Mirolic Enterprise - Software Development & Cloud Services",
     template: "%s | Mirolic Enterprise",
   },
   description:
-    "Professional software development, web design, and intranet development services. Custom web applications, mobile apps, and enterprise solutions.",
+    "Professional software development, cloud services, and intranet development solutions. Custom web applications, mobile apps, and enterprise cloud infrastructure.",
   keywords: [
     "software development",
-    "web design",
+    "cloud services",
     "mobile app development",
     "intranet development",
     "web applications",
     "API development",
-    "e-commerce platforms",
-    "cloud services",
-    "UI/UX design",
+    "cloud hosting",
+    "devops",
+    "database management",
     "custom software",
     "enterprise solutions",
     "Nigeria software company",
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mirolic.sixtusagbo.dev",
-    title: "Mirolic Enterprise - Software Development & Web Design",
+    title: "Mirolic Enterprise - Software Development & Cloud Services",
     description:
-      "Professional software development, web design, and intranet development services. Custom web applications, mobile apps, and enterprise solutions.",
+      "Professional software development, cloud services, and intranet development solutions. Custom web applications, mobile apps, and enterprise cloud infrastructure.",
     siteName: "Mirolic Enterprise",
     images: [
       {
@@ -71,9 +71,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mirolic Enterprise - Software Development & Web Design",
+    title: "Mirolic Enterprise - Software Development & Cloud Services",
     description:
-      "Professional software development, web design, and intranet development services.",
+      "Professional software development, cloud services, and intranet development solutions.",
     images: ["/favicon.svg"],
   },
   verification: {

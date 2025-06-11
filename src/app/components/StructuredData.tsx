@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "Organization",
     name: "Mirolic Enterprise",
     description:
-      "Professional software development, web design, and intranet development services",
+      "Professional software development, cloud services, and intranet development solutions",
     url: "https://mirolic.sixtusagbo.dev",
     logo: "https://mirolic.sixtusagbo.dev/favicon.svg",
     contactPoint: {
@@ -27,21 +27,21 @@ export default function StructuredData() {
     },
     serviceType: [
       "Software Development",
-      "Web Design",
+      "Cloud Services",
       "Intranet Development",
       "Mobile App Development",
       "Web Application Development",
-      "Cloud Services",
+      "DevOps Services",
     ],
     knowsAbout: [
       "Software Development",
-      "Web Design",
+      "Cloud Computing",
       "Mobile Applications",
       "Intranet Systems",
       "API Development",
-      "E-commerce Platforms",
-      "Cloud Services",
-      "UI/UX Design",
+      "DevOps",
+      "Database Management",
+      "Performance Optimization",
     ],
   };
 

@@ -188,7 +188,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Web Design */}
+            {/* Cloud Services */}
             <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <svg
@@ -200,33 +200,33 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
                   />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
-                Web Design & Development
+                Cloud Services
               </h3>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Beautiful, responsive websites that engage your audience and
-                drive results. From concept to deployment.
+                Scalable cloud infrastructure and deployment solutions to ensure
+                your applications are fast, secure, and always available.
               </p>
               <ul className="text-sm text-slate-500 dark:text-slate-400 space-y-2">
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
-                  UI/UX Design & Prototyping
+                  Cloud Hosting & Deployment
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
-                  E-commerce Platforms
+                  Database Management
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
-                  Cloud Services & Hosting
+                  DevOps & CI/CD Pipelines
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
-                  CMS & Blog Development
+                  Performance Optimization
                 </li>
               </ul>
             </div>
@@ -416,7 +416,8 @@ export default function Home() {
           <div className="text-center">
             <div className="text-2xl font-bold mb-4">Mirolic Enterprise</div>
             <p className="text-slate-400 mb-6">
-              Professional Software Development, Web Design & Intranet Solutions
+              Professional Software Development, Cloud Services & Intranet
+              Solutions
             </p>
             <div className="border-t border-slate-700 pt-6">
               <p className="text-slate-400 text-sm">
