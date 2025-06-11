@@ -10,7 +10,7 @@ export default function FloatingElements() {
 
   useEffect(() => {
     // Generate consistent particle positions on client side only
-    const newParticles = Array.from({ length: 20 }).map((_, i) => ({
+    const newParticles = Array.from({ length: 20 }).map(() => ({
       left: `${20 + Math.random() * 60}%`,
       top: `${20 + Math.random() * 60}%`,
       delay: `${Math.random() * 10}s`,
@@ -135,7 +135,7 @@ export function SectionBackground({
 
   useEffect(() => {
     // Generate consistent particle positions on client side only
-    const newParticles = Array.from({ length: 8 }).map((_, i) => ({
+    const newParticles = Array.from({ length: 8 }).map(() => ({
       left: `${20 + Math.random() * 60}%`,
       top: `${20 + Math.random() * 60}%`,
       delay: `${Math.random() * 8}s`,

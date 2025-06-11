@@ -275,7 +275,8 @@ export default function Home() {
                 Get In Touch
               </h2>
               <p className="text-xl text-gray-300">
-                Ready to start your next project? Let's discuss how we can help.
+                Ready to start your next project? Let&apos;s discuss how we can
+                help.
               </p>
             </div>
 
@@ -340,8 +341,8 @@ export default function Home() {
                   Start Your Project
                 </h3>
                 <p className="text-gray-300 mb-6">
-                  Have a project in mind? We'd love to hear about it and discuss
-                  how we can bring your vision to life.
+                  Have a project in mind? We&apos;d love to hear about it and
+                  discuss how we can bring your vision to life.
                 </p>
                 <ModernButton
                   href="mailto:hi+mirolic@sixtusagbo.dev"
