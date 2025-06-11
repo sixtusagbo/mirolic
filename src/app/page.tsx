@@ -1,102 +1,302 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+      {/* Navigation */}
+      <nav className="container mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          <div className="text-2xl font-bold text-slate-800 dark:text-white">
+            Mirolic Enterprise
+          </div>
+          <div className="hidden md:flex space-x-8">
+            <a
+              href="#services"
+              className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              Services
+            </a>
+            <a
+              href="#about"
+              className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              About
+            </a>
+            <a
+              href="#contact"
+              className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              Contact
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="container mx-auto px-6 py-20 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-800 dark:text-white mb-6">
+            Professional Software
+            <span className="text-blue-600 dark:text-blue-400"> Solutions</span>
+          </h1>
+          <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+            Delivering cutting-edge software development, web design, and
+            intranet solutions to help your business thrive in the digital age.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#contact"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
+              Get Started
+            </a>
+            <a
+              href="#services"
+              className="border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 px-8 py-3 rounded-lg font-semibold transition-colors">
+              Our Services
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-20 bg-white dark:bg-slate-800">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-slate-800 dark:text-white mb-4">
+              Our Services
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300">
+              Comprehensive technology solutions for your business needs
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Software Development */}
+            <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-6">
+                <svg
+                  className="w-6 h-6 text-blue-600 dark:text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
+                Software Development
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300">
+                Custom software solutions tailored to your business
+                requirements, built with modern technologies and best practices.
+              </p>
+            </div>
+
+            {/* Web Design */}
+            <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-6">
+                <svg
+                  className="w-6 h-6 text-green-600 dark:text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17v4a2 2 0 002 2h4M13 13h4a2 2 0 012 2v4a2 2 0 01-2 2h-4"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
+                Web Design
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300">
+                Beautiful, responsive websites that engage your audience and
+                drive results. From concept to deployment.
+              </p>
+            </div>
+
+            {/* Intranet Development */}
+            <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-6">
+                <svg
+                  className="w-6 h-6 text-purple-600 dark:text-purple-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
+                Intranet Development
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300">
+                Secure internal networks and collaboration platforms to
+                streamline your organization's communication and workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-slate-50 dark:bg-slate-900">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-slate-800 dark:text-white mb-8">
+              About Mirolic Enterprise
+            </h2>
+            <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+              Mirolic Enterprise is a registered business specializing in
+              software development, web design, and intranet development. Based
+              in Awka, Anambra State, Nigeria, we are committed to delivering
+              innovative technology solutions that drive business growth.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8 text-left">
+              <div className="bg-white dark:bg-slate-800 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
+                  Our Mission
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300">
+                  To empower businesses with cutting-edge technology solutions
+                  that enhance productivity, streamline operations, and create
+                  meaningful digital experiences.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-slate-800 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
+                  Our Approach
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300">
+                  We combine technical expertise with deep understanding of
+                  business needs to deliver solutions that are not just
+                  functional, but transformative.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-white dark:bg-slate-800">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-slate-800 dark:text-white mb-4">
+                Get In Touch
+              </h2>
+              <p className="text-xl text-slate-600 dark:text-slate-300">
+                Ready to start your next project? Let's discuss how we can help.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <h3 className="text-2xl font-semibold text-slate-800 dark:text-white mb-6">
+                  Contact Information
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-6 h-6 text-blue-600 dark:text-blue-400 mt-1">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-800 dark:text-white">
+                        Address
+                      </p>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Flat 6 Park Avenue Lodge, Ifite
+                        <br />
+                        Awka, Anambra State, Nigeria
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-6 h-6 text-blue-600 dark:text-blue-400 mt-1">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-800 dark:text-white">
+                        Business Registration
+                      </p>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Registration No: 8441451
+                        <br />
+                        TIN: 33121515-0001
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl">
+                <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-6">
+                  Start Your Project
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-6">
+                  Have a project in mind? We'd love to hear about it and discuss
+                  how we can bring your vision to life.
+                </p>
+                <a
+                  href="mailto:contact@mirolic.sixtusagbo.dev"
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                  Send us an Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-800 dark:bg-slate-900 text-white py-12">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <div className="text-2xl font-bold mb-4">Mirolic Enterprise</div>
+            <p className="text-slate-400 mb-6">
+              Professional Software Development, Web Design & Intranet Solutions
+            </p>
+            <div className="border-t border-slate-700 pt-6">
+              <p className="text-slate-400 text-sm">
+                © 2025 Mirolic Enterprise. All rights reserved. | Registration
+                No: 8441451
+              </p>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );
