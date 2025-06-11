@@ -1,6 +1,19 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+    <div
+      className={`min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 transition-opacity duration-1000 ${
+        isLoaded ? "opacity-100" : "opacity-0"
+      }`}>
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -67,8 +80,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Software Development */}
-            <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <svg
                   className="w-6 h-6 text-blue-600 dark:text-blue-400"
                   fill="none"
@@ -85,15 +98,33 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
                 Software Development
               </h3>
-              <p className="text-slate-600 dark:text-slate-300">
+              <p className="text-slate-600 dark:text-slate-300 mb-4">
                 Custom software solutions tailored to your business
                 requirements, built with modern technologies and best practices.
               </p>
+              <ul className="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span>
+                  Web Applications & Platforms
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span>
+                  Mobile Apps (iOS & Android)
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span>
+                  Desktop Applications
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span>
+                  API Development & Integration
+                </li>
+              </ul>
             </div>
 
             {/* Web Design */}
-            <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <svg
                   className="w-6 h-6 text-green-600 dark:text-green-400"
                   fill="none"
@@ -103,22 +134,40 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17v4a2 2 0 002 2h4M13 13h4a2 2 0 012 2v4a2 2 0 01-2 2h-4"
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
-                Web Design
+                Web Design & Development
               </h3>
-              <p className="text-slate-600 dark:text-slate-300">
+              <p className="text-slate-600 dark:text-slate-300 mb-4">
                 Beautiful, responsive websites that engage your audience and
                 drive results. From concept to deployment.
               </p>
+              <ul className="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
+                  Responsive Website Design
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
+                  E-commerce Platforms
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
+                  Landing Pages & Portfolios
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
+                  CMS & Blog Development
+                </li>
+              </ul>
             </div>
 
             {/* Intranet Development */}
-            <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-slate-50 dark:bg-slate-700 p-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <svg
                   className="w-6 h-6 text-purple-600 dark:text-purple-400"
                   fill="none"
@@ -135,10 +184,28 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4">
                 Intranet Development
               </h3>
-              <p className="text-slate-600 dark:text-slate-300">
+              <p className="text-slate-600 dark:text-slate-300 mb-4">
                 Secure internal networks and collaboration platforms to
                 streamline your organization's communication and workflows.
               </p>
+              <ul className="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mr-3"></span>
+                  Internal Communication Systems
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mr-3"></span>
+                  Document Management Systems
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mr-3"></span>
+                  Employee Portals & Dashboards
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mr-3"></span>
+                  Workflow Automation Tools
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -153,9 +220,9 @@ export default function Home() {
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
               Mirolic Enterprise is a registered business specializing in
-              software development, web design, and intranet development. Based
-              in Awka, Anambra State, Nigeria, we are committed to delivering
-              innovative technology solutions that drive business growth.
+              software development, web design, and intranet development. We are
+              committed to delivering innovative technology solutions that drive
+              business growth and digital transformation.
             </p>
             <div className="grid md:grid-cols-2 gap-8 text-left">
               <div className="bg-white dark:bg-slate-800 p-6 rounded-lg">
@@ -212,24 +279,20 @@ export default function Home() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                          d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                         />
                       </svg>
                     </div>
                     <div>
                       <p className="font-semibold text-slate-800 dark:text-white">
-                        Address
+                        Email
                       </p>
                       <p className="text-slate-600 dark:text-slate-300">
-                        Flat 6 Park Avenue Lodge, Ifite
-                        <br />
-                        Awka, Anambra State, Nigeria
+                        <a
+                          href="mailto:hi+mirolic@sixtusagbo.dev"
+                          className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                          hi+mirolic@sixtusagbo.dev
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -271,7 +334,7 @@ export default function Home() {
                   how we can bring your vision to life.
                 </p>
                 <a
-                  href="mailto:contact@mirolic.sixtusagbo.dev"
+                  href="mailto:hi+mirolic@sixtusagbo.dev"
                   className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                   Send us an Email
                 </a>
