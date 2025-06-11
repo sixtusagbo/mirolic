@@ -35,7 +35,7 @@ export default function ModernCard({
       shadow-web3
     `,
     gradient: `
-      bg-gradient-web3
+      bg-gradient-modern
       border border-gold-500/40
       dark:border-gold-500/50
       shadow-glass
@@ -161,8 +161,8 @@ export function StatsCard({
   );
 }
 
-// Web3 Button Component
-interface Web3ButtonProps {
+// Modern Button Component
+interface ModernButtonProps {
   children: ReactNode;
   variant?: "primary" | "secondary" | "glass";
   size?: "sm" | "md" | "lg";
@@ -171,14 +171,14 @@ interface Web3ButtonProps {
   href?: string;
 }
 
-export function Web3Button({
+export function ModernButton({
   children,
   variant = "primary",
   size = "md",
   className = "",
   onClick,
   href,
-}: Web3ButtonProps) {
+}: ModernButtonProps) {
   const baseClasses =
     "font-semibold rounded-lg transition-all duration-300 ease-out inline-flex items-center justify-center";
 
@@ -189,7 +189,7 @@ export function Web3Button({
   };
 
   const variantClasses = {
-    primary: "btn-web3",
+    primary: "btn-modern",
     secondary: "btn-glass text-gold-400 hover:text-black",
     glass: "btn-glass text-gold-400",
   };

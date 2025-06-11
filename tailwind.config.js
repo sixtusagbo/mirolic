@@ -48,7 +48,7 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient-web3': 'linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #f59e0b 100%)',
+        'gradient-modern': 'linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #f59e0b 100%)',
         'gradient-gold': 'linear-gradient(45deg, #f59e0b, #fbbf24, #f97316)',
         'gradient-cyber': 'linear-gradient(135deg, #000000 0%, #f97316 50%, #f59e0b 100%)',
         'gradient-mesh': 'conic-gradient(from 0deg at 50% 50%, #000000, #f59e0b, #f97316, #000000)',

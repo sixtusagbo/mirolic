@@ -2,10 +2,14 @@
 
 import { useEffect, useState } from "react";
 import FloatingElements, {
-  Web3HeroBackground,
+  HeroBackground,
   SectionBackground,
 } from "./components/FloatingElements";
-import { ServiceCard, FeatureCard, Web3Button } from "./components/ModernCard";
+import {
+  ServiceCard,
+  FeatureCard,
+  ModernButton,
+} from "./components/ModernCard";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -107,7 +111,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20">
-        <Web3HeroBackground />
+        <HeroBackground />
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <h1
@@ -128,15 +132,16 @@ export default function Home() {
                   : "translate-y-8 opacity-0"
               }`}>
               Delivering cutting-edge software development, cloud services, and
-              intranet solutions to help your business thrive in the Web3 era.
+              intranet solutions to help your business thrive in the digital
+              age.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Web3Button href="#contact" variant="primary" size="lg">
+              <ModernButton href="#contact" variant="primary" size="lg">
                 Get Started
-              </Web3Button>
-              <Web3Button href="#services" variant="glass" size="lg">
+              </ModernButton>
+              <ModernButton href="#services" variant="glass" size="lg">
                 Our Services
-              </Web3Button>
+              </ModernButton>
             </div>
           </div>
         </div>
@@ -342,11 +347,11 @@ export default function Home() {
                   Have a project in mind? We'd love to hear about it and discuss
                   how we can bring your vision to life.
                 </p>
-                <Web3Button
+                <ModernButton
                   href="mailto:hi+mirolic@sixtusagbo.dev"
                   variant="primary">
                   Send us an Email
-                </Web3Button>
+                </ModernButton>
               </div>
             </div>
           </div>

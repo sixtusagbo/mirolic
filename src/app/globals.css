@@ -29,8 +29,8 @@
   --glass-border: rgba(245, 158, 11, 0.2);
   --glass-shadow: rgba(0, 0, 0, 0.5);
 
-  /* Web3 Advanced Gradients */
-  --gradient-web3: linear-gradient(
+  /* Advanced Gradients */
+  --gradient-modern: linear-gradient(
     135deg,
     #000000 0%,
     #1a1a1a 50%,
@@ -100,16 +100,18 @@ body {
 }
 
 .glass-nav {
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
   border-bottom: 1px solid rgba(245, 158, 11, 0.3);
   box-shadow: 0 4px 24px rgba(245, 158, 11, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
   .glass-nav {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     border-bottom: 1px solid rgba(245, 158, 11, 0.4);
     box-shadow: 0 4px 24px rgba(245, 158, 11, 0.2);
   }
@@ -180,7 +182,7 @@ body {
   animation: mesh-move 20s ease-in-out infinite;
 }
 
-/* Web3 Button Styles */
+/* Modern Button Styles */
 .btn-glass {
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(15px);
@@ -194,7 +196,7 @@ body {
   box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
 }
 
-.btn-web3 {
+.btn-modern {
   background: linear-gradient(135deg, #f59e0b, #f97316);
   border: 1px solid rgba(245, 158, 11, 0.5);
   color: #000000;
@@ -202,7 +204,7 @@ body {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-web3:hover {
+.btn-modern:hover {
   background: linear-gradient(135deg, #fbbf24, #f59e0b);
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);

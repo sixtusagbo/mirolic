@@ -94,12 +94,12 @@ export default function FloatingElements() {
   );
 }
 
-// Web3 Hero Background Component
-export function Web3HeroBackground() {
+// Hero Background Component
+export function HeroBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden">
       {/* Main gradient background */}
-      <div className="absolute inset-0 bg-gradient-web3"></div>
+      <div className="absolute inset-0 bg-gradient-modern"></div>
 
       {/* Animated overlay */}
       <div className="absolute inset-0 bg-gradient-cyber opacity-50 animate-gradient"></div>
