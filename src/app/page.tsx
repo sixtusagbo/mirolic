@@ -329,11 +329,7 @@ export default function Home() {
                       <p className="font-semibold text-white">
                         Business Registration
                       </p>
-                      <p className="text-gray-300">
-                        Registration No: 8441451
-                        <br />
-                        TIN: 33121515-0001
-                      </p>
+                      <p className="text-gray-300">Registration No: 8441451</p>
                     </div>
                   </div>
                 </div>
