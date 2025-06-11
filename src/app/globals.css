@@ -100,20 +100,14 @@ body {
 }
 
 .glass-nav {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
+  background: rgba(0, 0, 0, 0.9);
   border-bottom: 1px solid rgba(245, 158, 11, 0.3);
-  box-shadow: 0 4px 24px rgba(245, 158, 11, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
   .glass-nav {
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
+    background: rgba(0, 0, 0, 0.9);
     border-bottom: 1px solid rgba(245, 158, 11, 0.4);
-    box-shadow: 0 4px 24px rgba(245, 158, 11, 0.2);
   }
 }
 
