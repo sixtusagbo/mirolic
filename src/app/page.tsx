@@ -30,7 +30,7 @@ export default function Home() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold text-gold-400">
-              Mirolic Enterprise
+              MIROLIC ENTERPRISE
             </div>
 
             {/* Desktop Menu */}
@@ -243,10 +243,10 @@ export default function Home() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-white mb-8">
-              About Mirolic Enterprise
+              About MIROLIC ENTERPRISE
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              Mirolic Enterprise is a registered business specializing in
+              MIROLIC ENTERPRISE is a registered business specializing in
               software development, cloud services, and intranet development. We
               are committed to delivering innovative technology solutions that
               drive business growth and digital transformation.
@@ -361,7 +361,7 @@ export default function Home() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center">
             <div className="text-2xl font-bold mb-4 text-gold-400">
-              Mirolic Enterprise
+              MIROLIC ENTERPRISE
             </div>
             <p className="text-gray-400 mb-6">
               Professional Software Development, Cloud Services & Intranet
@@ -369,7 +369,7 @@ export default function Home() {
             </p>
             <div className="border-t border-gold-500/20 pt-6">
               <p className="text-gray-400 text-sm">
-                © 2025 Mirolic Enterprise. All rights reserved. | Registration
+                © 2025 MIROLIC ENTERPRISE. All rights reserved. | Registration
                 No: 8441451
               </p>
             </div>

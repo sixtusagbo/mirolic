@@ -2,7 +2,7 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Mirolic Enterprise",
+    name: "MIROLIC ENTERPRISE",
     description:
       "Professional software development, cloud services, and intranet development solutions",
     url: "https://mirolic.sixtusagbo.dev",
@@ -19,7 +19,7 @@ export default function StructuredData() {
     sameAs: [],
     foundingDate: "2025",
     numberOfEmployees: "1",
-    legalName: "Mirolic Enterprise",
+    legalName: "MIROLIC ENTERPRISE",
     taxID: "33121515-0001",
     areaServed: {
       "@type": "Country",

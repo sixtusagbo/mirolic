@@ -1,6 +1,6 @@
-# Mirolic Enterprise
+# MIROLIC ENTERPRISE
 
-A modern, professional business landing page for **Mirolic Enterprise**. It was built with modern web technologies and featuring a sophisticated design.
+A modern, professional business landing page for **MIROLIC ENTERPRISE**. It was built with modern web technologies and featuring a sophisticated design.
 
 ## 📋 Prerequisites
 
@@ -60,4 +60,4 @@ For technical issues or questions about the codebase, please open an issue in th
 
 ---
 
-**Built with ❤️ by Mirolic Enterprise** | © 2025 All Rights Reserved
+**Built with ❤️ by MIROLIC ENTERPRISE** | © 2025 All Rights Reserved

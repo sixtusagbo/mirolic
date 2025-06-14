@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mirolic Enterprise - Software Development & Cloud Services",
-    template: "%s | Mirolic Enterprise",
+    default: "MIROLIC ENTERPRISE - Software Development & Cloud Services",
+    template: "%s | MIROLIC ENTERPRISE",
   },
   description:
     "Professional software development, cloud services, and intranet development solutions. Custom web applications, mobile apps, and enterprise cloud infrastructure.",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     "enterprise solutions",
     "Nigeria software company",
   ],
-  authors: [{ name: "Mirolic Enterprise" }],
-  creator: "Mirolic Enterprise",
-  publisher: "Mirolic Enterprise",
+  authors: [{ name: "MIROLIC ENTERPRISE" }],
+  creator: "MIROLIC ENTERPRISE",
+  publisher: "MIROLIC ENTERPRISE",
   robots: {
     index: true,
     follow: true,
@@ -56,22 +56,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mirolic.sixtusagbo.dev",
-    title: "Mirolic Enterprise - Software Development & Cloud Services",
+    title: "MIROLIC ENTERPRISE - Software Development & Cloud Services",
     description:
       "Professional software development, cloud services, and intranet development solutions. Custom web applications, mobile apps, and enterprise cloud infrastructure.",
-    siteName: "Mirolic Enterprise",
+    siteName: "MIROLIC ENTERPRISE",
     images: [
       {
         url: "/favicon.svg",
         width: 32,
         height: 32,
-        alt: "Mirolic Enterprise Logo",
+        alt: "MIROLIC ENTERPRISE Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mirolic Enterprise - Software Development & Cloud Services",
+    title: "MIROLIC ENTERPRISE - Software Development & Cloud Services",
     description:
       "Professional software development, cloud services, and intranet development solutions.",
     images: ["/favicon.svg"],
