@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://mirolic.sixtusagbo.dev",
+    url: "https://mirolic.org",
     title: "MIROLIC ENTERPRISE - Software Development & Cloud Services",
     description:
       "Professional software development, cloud services, and intranet development solutions. Custom web applications, mobile apps, and enterprise cloud infrastructure.",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://mirolic.sixtusagbo.dev",
+    canonical: "https://mirolic.org",
   },
 };
 
