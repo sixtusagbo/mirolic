@@ -5,11 +5,11 @@ export default function StructuredData() {
     name: "MIROLIC ENTERPRISE",
     description:
       "Professional software development, cloud services, and intranet development solutions",
-    url: "https://mirolic.sixtusagbo.dev",
-    logo: "https://mirolic.sixtusagbo.dev/favicon.svg",
+    url: "https://mirolic.org",
+    logo: "https://mirolic.org/favicon.svg",
     contactPoint: {
       "@type": "ContactPoint",
-      email: "hi+mirolic@sixtusagbo.dev",
+      email: "contact@mirolic.org",
       contactType: "customer service",
     },
     address: {

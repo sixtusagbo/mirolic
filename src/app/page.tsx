@@ -304,9 +304,9 @@ export default function Home() {
                       <p className="font-semibold text-white">Email</p>
                       <p className="text-gray-300">
                         <a
-                          href="mailto:hi+mirolic@sixtusagbo.dev"
+                          href="mailto:contact@mirolic.org"
                           className="hover:text-gold-400 transition-colors">
-                          hi+mirolic@sixtusagbo.dev
+                          contact@mirolic.org
                         </a>
                       </p>
                     </div>
@@ -345,7 +345,7 @@ export default function Home() {
                   discuss how we can bring your vision to life.
                 </p>
                 <ModernButton
-                  href="mailto:hi+mirolic@sixtusagbo.dev"
+                  href="mailto:contact@mirolic.org"
                   variant="primary">
                   Send us an Email
                 </ModernButton>
