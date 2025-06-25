@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     url: "https://mirolic.org",
     title: "MIROLIC ENTERPRISE - Software Development & Cloud Services",
     description:
-      "Professional software development, cloud services, and intranet development solutions. Custom web applications, mobile apps, and enterprise cloud infrastructure.",
+      "Professional software development, cloud services, and intranet development solutions. We build custom web applications, mobile apps, and enterprise cloud infrastructure.",
     siteName: "MIROLIC ENTERPRISE",
     images: [
       {
