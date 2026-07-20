@@ -91,8 +91,8 @@ export default async function OpengraphImage() {
             borderTop: "1px solid rgba(251, 191, 36, 0.25)",
             paddingTop: "24px",
           }}>
-          <div>mirolic.org</div>
-          <div>contact@mirolic.org</div>
+          <div>mirolic.com</div>
+          <div>contact@mirolic.com</div>
         </div>
       </div>
     ),

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const SITE_URL = "https://mirolic.org";
+const SITE_URL = "https://mirolic.com";
 const SITE_NAME = "MIROLIC ENTERPRISE";
 const TITLE =
   "MIROLIC ENTERPRISE — Custom Software, Web & Mobile App Development, Cloud & Intranet Solutions";

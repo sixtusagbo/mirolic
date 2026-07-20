@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://mirolic.org";
+  const baseUrl = "https://mirolic.com";
 
   return {
     rules: [

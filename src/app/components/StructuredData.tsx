@@ -1,4 +1,4 @@
-const SITE_URL = "https://mirolic.org";
+const SITE_URL = "https://mirolic.com";
 const SITE_NAME = "MIROLIC ENTERPRISE";
 const LOGO_URL = `${SITE_URL}/favicon.svg`;
 const OG_IMAGE = `${SITE_URL}/opengraph-image`;
@@ -70,7 +70,7 @@ const FAQ = [
   {
     question: "How can I get a quote or start a project?",
     answer:
-      "Email contact@mirolic.org with a short description of your project, timeline and any constraints. We will respond with next steps, scope and a proposal.",
+      "Email contact@mirolic.com with a short description of your project, timeline and any constraints. We will respond with next steps, scope and a proposal.",
   },
 ];
 
@@ -101,14 +101,14 @@ export default function StructuredData() {
         contactPoint: [
           {
             "@type": "ContactPoint",
-            email: "contact@mirolic.org",
+            email: "contact@mirolic.com",
             contactType: "customer service",
             areaServed: ["NG", "Worldwide"],
             availableLanguage: ["English"],
           },
           {
             "@type": "ContactPoint",
-            email: "contact@mirolic.org",
+            email: "contact@mirolic.com",
             contactType: "sales",
             areaServed: ["NG", "Worldwide"],
             availableLanguage: ["English"],
