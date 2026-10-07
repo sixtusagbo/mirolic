@@ -169,6 +169,8 @@ interface ModernButtonProps {
   className?: string;
   onClick?: () => void;
   href?: string;
+  target?: string;
+  rel?: string;
 }
 
 export function ModernButton({
@@ -178,6 +180,8 @@ export function ModernButton({
   className = "",
   onClick,
   href,
+  target,
+  rel,
 }: ModernButtonProps) {
   const baseClasses =
     "font-semibold rounded-lg transition-all duration-300 ease-out inline-flex items-center justify-center";
@@ -199,6 +203,8 @@ export function ModernButton({
   return (
     <Component
       href={href}
+      target={target}
+      rel={rel}
       onClick={onClick}
       className={`
         ${baseClasses}

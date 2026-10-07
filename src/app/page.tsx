@@ -6,12 +6,49 @@ import FloatingElements, {
   HeroBackground,
   SectionBackground,
 } from "./components/FloatingElements";
-import {
+import ModernCard, {
   ServiceCard,
   FeatureCard,
   ModernButton,
 } from "./components/ModernCard";
 import { FAQ } from "./components/StructuredData";
+
+// Products Mirolic has built and shipped. Add/remove entries or links here.
+const products = [
+  {
+    name: "Food Pilot",
+    tagline: "AI eating companion",
+    description:
+      "An iOS app that gives people personalized, AI-generated meal recommendations and keeps them on track — without the usual calorie-counting and logging burden.",
+    tech: ["Flutter", "Firebase", "AI"],
+    badge: "Live on the App Store",
+    links: [
+      {
+        label: "View on App Store",
+        href: "https://apps.apple.com/us/app/food-pilot/id6756402994",
+      },
+      { label: "foodpilot.app", href: "https://www.foodpilot.app/" },
+    ],
+  },
+  {
+    name: "Arvalox",
+    tagline: "AI-powered A/R management",
+    description:
+      "A B2B SaaS platform that automates accounts-receivable management with AI-driven insights and analytics, helping businesses get paid faster.",
+    tech: ["Next.js", "FastAPI", "PostgreSQL"],
+    badge: null as string | null,
+    links: [] as { label: string; href: string }[],
+  },
+  {
+    name: "Grosonix",
+    tagline: "AI social-growth platform",
+    description:
+      "A social media growth platform with AI content intelligence that helps creators and brands grow their audience with data-driven recommendations.",
+    tech: ["Next.js", "TypeScript", "Supabase"],
+    badge: null as string | null,
+    links: [] as { label: string; href: string }[],
+  },
+];
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -52,6 +89,11 @@ export default function Home() {
                 href="#services"
                 className="text-gray-300 hover:text-gold-400 transition-colors font-medium">
                 Services
+              </a>
+              <a
+                href="#products"
+                className="text-gray-300 hover:text-gold-400 transition-colors font-medium">
+                Products
               </a>
               <a
                 href="#about"
@@ -112,6 +154,12 @@ export default function Home() {
                   className="text-gray-300 hover:text-gold-400 transition-colors font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}>
                   Services
+                </a>
+                <a
+                  href="#products"
+                  className="text-gray-300 hover:text-gold-400 transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}>
+                  Products
                 </a>
                 <a
                   href="#about"
@@ -286,6 +334,78 @@ export default function Home() {
         </section>
 
         <section
+          id="products"
+          aria-labelledby="products-heading"
+          className="relative py-20">
+          <SectionBackground variant="darker" />
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <h2
+                id="products-heading"
+                className="text-4xl font-bold text-white mb-4">
+                Products We&apos;ve Built
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                We don&apos;t only build for clients — we ship our own
+                AI-native products. Here&apos;s what we&apos;ve launched and
+                what we&apos;re building.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {products.map((product) => (
+                <ModernCard
+                  key={product.name}
+                  className="p-8 flex flex-col"
+                  variant="glass"
+                  hover={false}>
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <h3 className="text-2xl font-bold text-gold-400">
+                      {product.name}
+                    </h3>
+                    {product.badge && (
+                      <span className="shrink-0 text-xs font-semibold px-2.5 py-1 rounded-full bg-gold-400/15 text-gold-400 border border-gold-400/30">
+                        {product.badge}
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4">
+                    {product.tagline}
+                  </p>
+                  <p className="text-gray-300 leading-relaxed mb-6 flex-grow">
+                    {product.description}
+                  </p>
+                  <ul className="flex flex-wrap gap-2 mb-6">
+                    {product.tech.map((t) => (
+                      <li
+                        key={t}
+                        className="text-xs text-gray-400 px-2.5 py-1 rounded-md bg-white/5 border border-gold-500/10">
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+                  {product.links.length > 0 && (
+                    <div className="flex flex-wrap gap-3 mt-auto">
+                      {product.links.map((link) => (
+                        <ModernButton
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          variant="glass"
+                          size="sm">
+                          {link.label}
+                        </ModernButton>
+                      ))}
+                    </div>
+                  )}
+                </ModernCard>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section
           id="about"
           aria-labelledby="about-heading"
           className="relative py-20">
@@ -302,7 +422,9 @@ export default function Home() {
                 offering custom web and mobile applications, cloud services and
                 intranet solutions. We build for businesses that need reliable,
                 scalable technology — from MVPs and SaaS platforms to enterprise
-                systems and internal tools.
+                systems and internal tools. Alongside client work, we build and
+                ship our own AI-native products, including Food Pilot, our AI
+                eating companion live on the App Store.
               </p>
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
                 Our services span web app development, iOS and Android apps,
